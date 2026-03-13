@@ -31,14 +31,14 @@ python3 -m uvicorn vulnerable_jwt_api:app --reload
 
 ## Security Test Results
 
-### Normal User Access
-![Normal Access](screenshots/jwt-normal-user-access.png)
+### Vulnerable API – Login and Profile Access
+![Login](screenshots/jwt-vulnerable-api-login-and-profile.png)
 
-### Access Denied (Admin Endpoint)
-![Denied](screenshots/jwt-user-login-and-access-test.png)
+### Token Generation and Attack Setup
+![Token Generation](screenshots/jwt-login-and-forged-token-generation.png)
 
-### Forged Token Privilege Escalation
-![Forged Token](screenshots/jwt-forged-token-privilege-escalation.png)
+### Privilege Escalation via Forged JWT Token
+![Privilege Escalation](screenshots/jwt-forged-token-privilege-escalation.png)
 
-### Secure API Validation
-![Secure Validation](screenshots/jwt-secure-api-validation.png)
+### Secure API – Forged Token Rejected
+![Secure Validation](screenshots/jwt-secure-api-rejects-forged-token.png)
