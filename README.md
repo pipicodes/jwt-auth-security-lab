@@ -23,9 +23,8 @@ This lab includes:
 
 Weak JWT signing secret leading to token forgery and privilege escalation.
 
-## How to Run
+## Run the Vulnerable Version
 
-### Vulnerable version
 ```bash
 python3 -m uvicorn vulnerable_jwt_api:app --reload
 
