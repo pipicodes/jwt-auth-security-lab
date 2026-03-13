@@ -30,6 +30,8 @@ Weak JWT signing secret leading to token forgery and privilege escalation.
 ```bash
 python3 -m uvicorn vulnerable_jwt_api:app --reload
 
+```
+
 ### Secure version
 
 ```bash
