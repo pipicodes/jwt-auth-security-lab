@@ -1,6 +1,6 @@
 # JWT Authentication Security Lab
 
-A hands-on security lab demonstrating JWT authentication weaknesses, token forgery risk, and secure validation patterns using FastAPI.
+A hands-on security lab demonstrating JWT authentication weaknesses, token forgery risk, privilege escalation, and secure validation patterns using FastAPI.
 
 ## Project Scope
 
@@ -29,18 +29,8 @@ Weak JWT signing secret leading to token forgery and privilege escalation.
 
 ```bash
 python3 -m uvicorn vulnerable_jwt_api:app --reload
-python3 -m uvicorn vulnerable_jwt_api:app --reload
 
-## Security Test Results
+### Secure version
 
-### Vulnerable API – Login and Profile Access
-![Login](screenshots/jwt-vulnerable-api-login-and-profile.png)
-
-### Token Generation and Attack Setup
-![Token Generation](screenshots/jwt-login-and-forged-token-generation.png)
-
-### Privilege Escalation via Forged JWT Token
-![Privilege Escalation](screenshots/jwt-forged-token-privilege-escalation.png)
-
-### Secure API – Forged Token Rejected
-![Secure Validation](screenshots/jwt-secure-api-rejects-forged-token.png)
+```bash
+python3 -m uvicorn secure_jwt_api:app --reload --port 8001
