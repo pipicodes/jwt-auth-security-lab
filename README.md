@@ -36,3 +36,18 @@ python3 -m uvicorn vulnerable_jwt_api:app --reload
 
 ```bash
 python3 -m uvicorn secure_jwt_api:app --reload --port 8001
+
+## Security Test Results
+
+### Vulnerable API – Login and Profile Access
+
+![Login](screenshots/jwt-vulnerable-api-login-and-profile.png)
+
+### Token Generation and Attack Setup
+![Token Generation](screenshots/jwt-login-and-forged-token-generation.png)
+
+### Privilege Escalation via Forged JWT Token
+![Privilege Escalation](screenshots/jwt-forged-token-privilege-escalation.png)
+
+### Secure API – Forged Token Rejected
+![Secure Validation](screenshots/jwt-secure-api-rejects-forged-token.png)
