@@ -37,6 +37,8 @@ python3 -m uvicorn vulnerable_jwt_api:app --reload
 ```bash
 python3 -m uvicorn secure_jwt_api:app --reload --port 8001
 
+```
+
 ## Security Test Results
 
 ### Vulnerable API – Login and Profile Access
